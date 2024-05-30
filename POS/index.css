@@ -1,0 +1,160 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+  background-color: #2f3640;
+  font-family: 'Inter', sans-serif;
+  }
+  
+  
+  /* Basic styling for the navigation */
+  nav {
+    background-color: #2f3640;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f5f6fa; /* Add bottom border */
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  
+  }
+  .text_logo{  
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top :6px;
+    font-size: 32px;
+    color: #fbcb45;
+  
+  }
+  /* Styling for the logo */
+  .logo img {
+    margin-left: 80px;
+    height: auto;
+    width: 80px /* Adjust the width as needed */
+  }
+  
+  /* Styling for the login page */
+  .login-page {
+  
+    margin-bottom: 36px;
+    padding: 100px;
+    margin: auto;
+  
+  }
+  
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the image stays behind other content */
+    object-fit: cover; /* Cover the entire element */
+    object-position: center; /* Center the image within the element */
+    opacity: 0.2; /* Adjust the opacity (between 0 and 1) as needed */
+  }
+  
+  
+  /*aayusin*/
+  .picture {
+    flex-direction: column;
+    margin-right: 65%;
+    width:30%;
+    padding-top: 20%;
+  }
+  
+  /* Styling for the login form */
+  .form {
+    position: relative;
+    margin-left: 35%;
+    width:30%;
+    height: 458px;
+    background-image: linear-gradient(#f1f5fd, #d0dcf1);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-BOTTOM: 30px;
+    padding-top: 40px;
+    border-radius: 38px;
+    box-shadow: 0 12px 4px rgba(0, 0, 0, 0.1), inset 0 4px 1px rgb(255, 255, 255);
+    align-content: center;
+  }
+  
+  
+  .form h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    color:#2f3640;
+    font-size: 60px ;
+  
+  }
+  
+  .form input[type="email"],
+  .form input[type="password"],
+  .form input[type="text"] {
+    width: 100%;
+    margin-top: 2%;
+    padding: 14px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: inset 0 3px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #e8f0fe;
+  }
+  
+  .form input[type="submit"] {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right,#fbcb45,  #e1b12c); /* Gradient background */
+    color: #353b48;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1), inset 0 4px 4px 3px rgba(255, 255, 255, 0.3);
+  }
+  
+  .form input[type="submit"]:hover {
+    background-image: linear-gradient(to bottom, #e1b12c, #e1b12c); /* Gradient background */
+  }
+  
+  
+  /* Add styles for the eye icon */
+  .password-toggle {
+      position: relative;
+  }
+  
+  .password-toggle .toggle-icon {
+      position: absolute;
+      right: 20px;
+      top: 40%;
+      transform: translateY(-50%);
+      cursor: pointer;
+  }
+  
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: calc(80% + 10px); /* Position it just below the form elements */
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+  }
